@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    #zone{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 8px white;
+
+    }
+    .Abtn {
+        box-shadow: 0 0 8px white;
+        height: 60px;
+    }
+    .Ctbn {
+        box-shadow: 0 0 8px red;
+        height: 60px;
+    }
+    .Tbtn {
+        box-shadow: 0 0 8px rgb(0, 255, 34);
+        height: 60px;
+    }
+    .Mbtn {
+        box-shadow: 0 0 8px rgb(228, 167, 55);
+        height: 60px;
+    }
+</style>  
+</head>
+<body>
+    
+    <div class="align-items-center d-flex justify-content-center vh-100 ">
+    <div class="bg-dark p-4" style="border: 2px solid black; border-radius: 10px;   box-shadow: 0 0 8px rgb(0, 0, 0);" id="calculatres">
+        <header>
+            <div id="zone" class="text-end " style="font-size: 25px; padding: 2px;"></div>
+        </header>
+        <section>
+            <div class="row g-2">
+                <div class="col-3">
+                    <button class="Abtn btn btn-light w-100" onclick="ecrere('7')">7</button>
+                </div>
+                <div class="col-3">
+                    <button class="Abtn btn btn-light w-100" onclick="ecrere('8')">8</button>
+                </div>
+                <div class="col-3">
+                    <button class="Abtn btn btn-light w-100" onclick="ecrere('9')">9</button>
+                </div>
+                <div class="col-3">
+                    <button class="Mbtn btn btn-warning  w-100" onclick="ecrere('/')">/</button>
+                </div>
+                
+                
+                <div class="col-3">
+                    <button class="Abtn btn btn-light  w-100" onclick="ecrere('4')">4</button>
+                </div>
+                <div class="col-3">
+                    <button class="Abtn btn btn-light  w-100" onclick="ecrere('5')">5</button>
+                </div>
+                <div class="col-3">
+                    <button class="Abtn btn btn-light  w-100" onclick="ecrere('6')">6</button>
+                </div>
+                <div class="col-3">
+                    <button class="Mbtn btn btn-warning  w-100" onclick="ecrere('*')">*</button>
+                </div>
+                
+                <div class="col-3">
+                    <button class="Abtn btn btn-light  w-100 " onclick="ecrere('1')">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="Abtn btn btn-light  w-100" onclick="ecrere('2')">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="Abtn btn btn-light  w-100" onclick="ecrere('3')">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="Mbtn btn btn-warning  w-100" onclick="ecrere('-')">-</button>
+                </div>
+            
+            <div class="col-3">
+                <button class="Ctbn btn btn-danger  w-100" onclick=" delet()">C</button>
+            </div>
+            <div class="col-3">
+                <button class="Abtn btn btn-light  w-100" onclick="ecrere('0')">0</button>
+            </div>
+            <div class="col-3">
+                <button class="Tbtn btn btn-success  w-100" onclick="calcul()">=</button>
+            </div>
+            <div class="col-3">
+                <button class="Mbtn btn btn-warning  w-100" onclick="ecrere('+')">+</button>
+            </div>
+        </section>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
